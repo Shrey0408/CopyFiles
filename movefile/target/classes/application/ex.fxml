@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="291.0" minWidth="627.0" prefHeight="291.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <VBox layoutX="18.0" layoutY="14.0" prefHeight="286.0" prefWidth="592.0">
+         <children>
+            <HBox layoutX="22.0" layoutY="48.0" prefHeight="24.0" prefWidth="592.0">
+               <children>
+                  <Label text="Please attach the file below after filling the details in given" wrapText="true">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Hyperlink fx:id="templateLink" alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" onMouseClicked="#openTemplate" text="template" visited="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Hyperlink>
+               </children>
+            </HBox>
+            <HBox layoutX="66.0" layoutY="135.0" prefHeight="60.0" prefWidth="474.0">
+               <children>
+                  <TextField fx:id="diplayFileField">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="selectFileBtn" minWidth="240.0" mnemonicParsing="false" onMouseClicked="#selectExcelFile" prefWidth="240.0" text="Select file" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="75.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="99.0" layoutY="260.0" prefHeight="60.0" prefWidth="474.0">
+               <children>
+                  <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="527.0">
+                     <children>
+                        <Button fx:id="moveFilesBtn" mnemonicParsing="false" onMouseClicked="#copyFiles" prefHeight="42.0" prefWidth="120.0" text="Copy Files">
+                           <HBox.margin>
+                              <Insets left="220.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </HBox>
+                  <Label prefHeight="27.0" prefWidth="477.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="71.0" prefWidth="592.0">
+               <children>
+                  <Label fx:id="successMessage" contentDisplay="CENTER" textAlignment="CENTER" textFill="#3595cc">
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </Label>
+               </children></HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
